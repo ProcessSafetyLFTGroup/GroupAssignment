@@ -1,0 +1,6 @@
+[book]
+authors = ["Rintintink"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Group Assignment"

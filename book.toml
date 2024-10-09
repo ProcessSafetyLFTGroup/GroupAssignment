@@ -3,4 +3,12 @@ authors = ["Rintintink"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Group Assignment"
+title = "Process and Safety Group Assignment mdBook"
+
+[output.html]
+no-section-label = true
+
+#uitcommenten welke poort je  niet gebruikt voor de PlantUML Docker container
+[preprocessor.plantuml]
+#plantuml-cmd="http://localhost:8181"
+plantuml-cmd="http://localhost:8080"

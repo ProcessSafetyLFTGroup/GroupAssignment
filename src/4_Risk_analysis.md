@@ -45,11 +45,13 @@ partition "Risico 4: Misalignment van Robotarm" {
     :Mitigatie: Gebruik van positionele sensoren en herkalibratieprotocollen; 
 }
 
+detach
+
 partition "Risico 5: Verstopte gripperneedles" {
     :Beschrijving: Gripper needles vastgeklemd in beplating
     :Waarschijnlijkheid: Gemiddel;
     :Impact: Gemiddeld;
     :Mitigatie: Tool tijdig behandelen met lossingsmiddel.
-
+}
 
 @enduml

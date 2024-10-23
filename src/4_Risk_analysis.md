@@ -54,6 +54,16 @@ partition "Risico 5: Verstopte gripperneedles" {
     :Mitigatie: Tool tijdig behandelen met lossingsmiddel.
 }
 
+
+
+partition "Risico 6: Warmte" {
+    :Beschrijving: De extruder geeft warmte af en staat niet in het hekwerk
+    :Waarschijnlijkheid: Gemiddel;
+    :Impact: Gemiddeld;
+    :Mitigatie: Afstand houden en waarschuwenbord dat het heet is.
+}
+
+
 partition "Risico 7: Materiaal te koud" {
     :Beschrijving: Materiaal teveel afgekoeld, waardoor oppakken niet meer mogelijk is.;
     :Waarschijnlijkheid: Gemiddeld;

@@ -12,3 +12,4 @@ ToolSensor -> "Check of deegstreng verwijderd is." : Loslaten
 
 @enduml
 
+

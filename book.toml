@@ -10,5 +10,5 @@ no-section-label = true
 
 #uitcommenten welke poort je  niet gebruikt voor de PlantUML Docker container
 [preprocessor.plantuml]
-#plantuml-cmd="http://localhost:8181"
-plantuml-cmd="http://localhost:8080"
+plantuml-cmd="http://localhost:8181"
+#plantuml-cmd="http://localhost:8080"

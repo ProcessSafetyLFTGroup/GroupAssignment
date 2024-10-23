@@ -54,4 +54,10 @@ partition "Risico 5: Verstopte gripperneedles" {
     :Mitigatie: Tool tijdig behandelen met lossingsmiddel.
 }
 
+partition "Risico 7: Materiaal te koud" {
+    :Beschrijving: Materiaal teveel afgekoeld, waardoor oppakken niet meer mogelijk is.;
+    :Waarschijnlijkheid: Gemiddeld;
+    :Impact: Gemiddeld;
+    :Mitigatie: Extruder stopzetten na het cutten, tot de pers klaar is.
+}
 @enduml

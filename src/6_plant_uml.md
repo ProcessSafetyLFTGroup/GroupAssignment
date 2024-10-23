@@ -45,6 +45,62 @@ state ConveyorRunning {
 @enduml
 ```
 
+```plantuml
+@startuml
+class PLC {
+    +startSignaal()
+    +ontvangStartOutput()
+    +stuurPneumatischIn()
+    +stuurPneumatischUit()
+    +stuurStartLopendeBand()
+    +stuurStartKukaRobot()
+    +stuurMatrijsSluiten()
+    +wachtOpFotocel()
+    +wachtOpReedcontact()
+    +wachtOpRobotPositie()
+    +wachtOpFotocelDeeg()
+}
 
+class Extruder {
+    +gestart: Boolean
+    +start()
+    +stop()
+}
+
+class CuttingTool {
+    +sluit()
+    +snijdDeegstreng()
+    +reedcontactTrue: Boolean
+}
+
+class GrijperTool {
+    +sluit()
+    +open()
+    +pneumatischIn()
+    +pneumatischUit()
+}
+
+class KukaRobot {
+    +gaNaarPositie(position)
+    +gaNaarHomePositie()
+    +isOpPositie(position): Boolean
+}
+
+class EngelPers {
+    +sluitMatrijs()
+}
+
+class Fotocel {
+    +detecteerMateriaal(): Boolean
+}
+
+PLC "1" -- "1" Extruder
+PLC "1" -- "1" CuttingTool
+PLC "1" -- "1" GrijperTool
+PLC "1" -- "1" KukaRobot
+PLC "1" -- "1" EngelPers
+PLC "1" -- "1..*" Fotocel
+@enduml
+```
 
 

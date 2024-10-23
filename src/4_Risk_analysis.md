@@ -63,11 +63,19 @@ partition "Risico 6: Warmte" {
     :Mitigatie: Afstand houden en waarschuwenbord dat het heet is.;
 }
 
+detach
 
 partition "Risico 7: Materiaal te koud" {
     :Beschrijving: Materiaal teveel afgekoeld, waardoor oppakken niet meer mogelijk is.;
     :Waarschijnlijkheid: Gemiddeld;
     :Impact: Gemiddeld;
+    :Mitigatie: Extruder stopzetten na het cutten, tot de pers klaar is.;
+}
+
+partition "Risico 8: Materiaal te koud" {
+    :Beschrijving: Materiaal teveel afgekoeld, waardoor oppakken niet meer mogelijk is.;
+    :Waarschijnlijkheid: Gemiddeld;
+    :Impact: Hoog;
     :Mitigatie: Extruder stopzetten na het cutten, tot de pers klaar is.;
 }
 

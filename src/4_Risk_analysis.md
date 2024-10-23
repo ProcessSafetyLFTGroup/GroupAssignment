@@ -6,9 +6,9 @@ De volgende risicoanalyse beschrijft mogelijke risico's in het LFT-handlingsproc
 @startuml
 title Risicoanalyse voor LFT-handlingsmechanisme
 
-skinparam rectangle {
+skinparam partition {
     BorderColor black
-    BackgroundColor LightGray
+    BackgroundColor lightGray
 }
 
 partition "Risico 1: Falen van de Extruder" {
@@ -19,7 +19,6 @@ partition "Risico 1: Falen van de Extruder" {
 }
 
 detach
-
 partition "Risico 2: Sensorstoring" {
     :Beschrijving: Fotocel of Reed-schakelaar detecteert geen materiaal of gereedschapsposities;
     :Waarschijnlijkheid: Laag;
@@ -28,7 +27,6 @@ partition "Risico 2: Sensorstoring" {
 }
 
 detach
-
 partition "Risico 3: Pneumatisch Systeem Falen" {
     :Beschrijving: Falen van het pneumatische systeem verhindert de werking van de grijper;
     :Waarschijnlijkheid: Gemiddeld;
@@ -39,14 +37,13 @@ partition "Risico 3: Pneumatisch Systeem Falen" {
 detach
 
 partition "Risico 4: Misalignment van Robotarm" {
-    :Beschrijving: Robotarm bereikt niet de juiste positie;
+    :Beschrijving: Robotarm op incorrecte positie;
     :Waarschijnlijkheid: Laag;
     :Impact: Gemiddeld;
-    :Mitigatie: Gebruik van positionele sensoren en herkalibratieprotocollen; 
+    :Mitigatie: Initiele calibratie dmv verplaatsbaar werkobject; 
 }
 
 detach
-
 partition "Risico 5: Verstopte gripperneedles" {
     :Beschrijving: Gripper needles vastgeklemd in beplating
     :Waarschijnlijkheid: Gemiddel;
@@ -55,7 +52,6 @@ partition "Risico 5: Verstopte gripperneedles" {
 }
 
 detach
-
 partition "Risico 6: Warmte" {
     :Beschrijving: De extruder geeft warmte af en staat niet in het hekwerk
     :Waarschijnlijkheid: Gemiddel;
@@ -64,7 +60,6 @@ partition "Risico 6: Warmte" {
 }
 
 detach
-
 partition "Risico 7: Materiaal te koud" {
     :Beschrijving: Materiaal teveel afgekoeld, waardoor oppakken niet meer mogelijk is.;
     :Waarschijnlijkheid: Gemiddeld;
@@ -72,11 +67,5 @@ partition "Risico 7: Materiaal te koud" {
     :Mitigatie: Extruder stopzetten na het cutten, tot de pers klaar is.;
 }
 
-partition "Risico 8: Materiaal te koud" {
-    :Beschrijving: Materiaal teveel afgekoeld, waardoor oppakken niet meer mogelijk is.;
-    :Waarschijnlijkheid: Gemiddeld;
-    :Impact: Hoog;
-    :Mitigatie: Extruder stopzetten na het cutten, tot de pers klaar is.;
-}
 
 @enduml

@@ -9,3 +9,5 @@ ToolSensor -> "Check of deegstreng verwijderd is." : Loslaten
 
 @enduml
 
+De needles steken niet uit de teflonplaat
+

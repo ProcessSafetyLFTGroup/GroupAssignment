@@ -1,7 +1,5 @@
 # 1 Introductie
-In deze mdBook wordt het project beschreven van de LFT handling mechanisme voor TPAC.
-Met flowcharts van het uit te voeren proces, een hoofdstuk betreft safety en een risicoanalyse.
-Joejoe
+In deze mdBook wordt het project beschreven van het LFT-handlingsmechanisme voor TPAC, dat we uitvoeren in het kader van de minor Industriële Automatisering, zoals beschreven in sectie 1.1. Voor het vak "Proces en Safety" onderzoeken we het proces en analyseren we de bijbehorende risico's. Het mdbook bevat flowcharts van het te doorlopen proces, een hoofdstuk over veiligheid en een uitgebreide risicoanalyse.
 
 
 # 1.1 Opdrachtomschrijving

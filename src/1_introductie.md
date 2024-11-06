@@ -4,6 +4,11 @@ In deze mdBook wordt het project beschreven van het LFT-handlingsmechanisme voor
 
 # 1.1 Opdrachtomschrijving
 
+```
+@startuml
+// deegstreeg => hamster noemen
+@enduml
+```
 LFT handling systeem.
 
 TPAC is een onafhankelijk onderzoeks- en innovatiecentrum dat zich specialiseert in thermoplastische composieten en de bijbehorende productieprocessen. TPAC richt zich op praktische toepassingen, ontwikkelt proof-of-concepts voor bedrijven (kleine en middelgrote ondernemingen) en biedt expertise en faciliteiten aan bedrijven die willen innoveren met thermoplastische composieten.
@@ -31,3 +36,20 @@ De volgende documentatie zal worden opgeleverd:
     •	Test- en Analyseverslag
 
 Met deze documenten zal de klant alle relevante informatie hebben wat nodig is voor besturing en correct gebruik van het ontwerp. 
+
+
+# 1.2 Taakverdeling
+
+```
+@startuml
+class Taakverdeling {
+    || Nummer || Naam || Taak 1 || Taak 2 || Taak 3 ||
+    | 1 | Luuk | Algemeen opzet | Test |
+    | 2 | Joost | Flowchart Diagram gemaakt | Zelf evaluatie |
+    | 3 | Thijs | Risk analysis |
+    | 4 | Milan | Diagram |
+    | 5 | Jur | Introductie | Taakverdeling | Hoe we omgaan met commits |
+}
+@enduml
+```
+# 1.3 Hoe we omgaan met commits

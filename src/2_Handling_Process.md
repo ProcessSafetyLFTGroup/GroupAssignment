@@ -1,11 +1,12 @@
+# 2 LFT Afhandelingsproces
+
 In dit hoofdstuk worden twee diagrammen weergeven:
 
 Interface diagram (hoofdstuk 2.1): In dit diagram worden de volgorde van de verschillende systemen weergeven. Daarnaast word ook weergeven hoe alle losse systemen comminuceren.
 
 Flow chart (hoofdstuk 2.2): In de flowchart wordt het volledige proces gedetaileerd stap voor stap weergeven.
 
-
-# 2.1 LFT Interface diagram
+## 2.1 LFT Interface diagram
 
 ```plantuml
 @startuml interface Diagram
@@ -44,7 +45,12 @@ KUKA -up-> Beweging
 @enduml
 ```
 
-# 2.2 LFT proces flowchart
+## 2.2 LFT proces flowchart
+
+## 2.3 Flowchart
+Deze flowchart biedt een overzicht van het geautomatiseerde productieproces waarin een PLC, extruder, snijtool en KUKA-robot samenwerken. Stap voor stap toont de flowchart hoe deze onderdelen via signalen en sensoren met elkaar communiceren om de hamster door de productiecyclus te begeleiden. De PLC stuurt elk onderdeel aan en zorgt dat het materiaal wordt bewerkt, verplaatst en uiteindelijk in de pers wordt gevormd.
+
+Zo geeft het schema een helder beeld van de samenwerking tussen de machineonderdelen door alle processtappen heen.
 
 ```plantuml
 @startuml Proces diagram

@@ -60,23 +60,23 @@ Voor onze groepssamenwerking hebben we een workflow opgesteld in GitHub die ons 
 
 We hanteren een gestructureerde aanpak voor commits om de geschiedenis overzichtelijk en leesbaar te houden:
 
-    Frequentie van commits: We commiten na elke afgeronde taak of logische wijziging, en niet voor elke kleine aanpassing, zoals een enkele zin. Dit zorgt voor een overzichtelijke commitgeschiedenis.
-    Commit-berichten: We gebruiken beschrijvende commit-berichten om duidelijk aan te geven wat de commit inhoudt.
+• Frequentie van commits: We commiten na elke afgeronde taak of logische wijziging, en niet voor elke kleine aanpassing, zoals een enkele zin. Dit zorgt voor een overzichtelijke commitgeschiedenis.
+• Commit-berichten: We gebruiken beschrijvende commit-berichten om duidelijk aan te geven wat de commit inhoudt.
     
 # 1.3.2 Pull Requests
 
 Onze aanpak voor pull requests en het reviewproces is als volgt:
 
-    Commit in onze fork: Tussen door de dag doen wij een commit per onderdeel om zo duidelijk mogelijk te hebben wat er aangepast is. Dit doen we omdat het dan duidelijk is wat er aangepast is
-    Pull requests (PRs): Aan het einde van een werkdag of na het voltooien van een taak maken we een pull request naar de Github organistatie. Hiermee voorkomen we te veel kleine pull requests en houden we het overzicht.
+• Commit in onze fork: Tussen door de dag doen wij een commit per onderdeel om zo duidelijk mogelijk te hebben wat er aangepast is. Dit doen we omdat het dan duidelijk is wat er aangepast is
+• Pull requests (PRs): Aan het einde van een werkdag of na het voltooien van een taak maken we een pull request naar de Github organistatie. Hiermee voorkomen we te veel kleine pull requests en houden we het overzicht.
     
 # 1.3.3 Mergen en Merge-commits
 
 Onze merge-strategie helpt ons om de projectgeschiedenis overzichtelijk te houden:
     
-    Code reviews en dubbele controle: Een teamlid die de taak niet zelf heeft geschreven, reviewt de pull request. Dit zorgt voor een dubbele controle van de wijzigingen, wat de kwaliteit en veiligheid verhoogt.
-    Checklist voor reviews: Tijdens de review controleren we op duidelijke structuur, afwezigheid van syntax- of veiligheidsfouten, en duidelijke commit-boodschappen.
-    Feedback: De reviewer kan suggesties geven of kleine aanpassingen maken, zodat de PR zo snel mogelijk kan worden afgerond.
+• Code reviews en dubbele controle: Een teamlid die de taak niet zelf heeft geschreven, reviewt de pull request. Dit zorgt voor een dubbele controle van de wijzigingen, wat de kwaliteit en veiligheid verhoogt.
+• Checklist voor reviews: Tijdens de review controleren we op duidelijke structuur, afwezigheid van syntax- of veiligheidsfouten, en duidelijke commit-boodschappen.
+• Feedback: De reviewer kan suggesties geven of kleine aanpassingen maken, zodat de PR zo snel mogelijk kan worden afgerond.
     
 
 # 1.3.4 Regelmatige Communicatie en Planning

@@ -6,6 +6,7 @@ De risico’s betreffen onder andere brandwonden door hete materialen en onderde
 
 
 
-
+[Downloaden Risco analyse](./data/Risk_analysis_LFT_v1.xlsx)
+ 
 
 

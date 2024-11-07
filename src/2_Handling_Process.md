@@ -1,8 +1,53 @@
-# 2 LFT Handling process
 
+
+# 2.1 LFT Interface diagram
 
 ```plantuml
-@startuml
+@startuml interface Diagram
+skinparam rectangle {
+    BackgroundColor white
+    BorderColor black
+    FontSize 12
+}
+
+
+rectangle "gerecycled Materiaal" as GerecycledMateriaal
+rectangle "Extruder" as Extruder
+rectangle "Cutting Tool" as CuttingTool
+rectangle "Output Materiaal" as OutputMateriaal
+rectangle "Robot Arm (KUKA)" as KUKA
+rectangle "Mal (ENGEL)" as Mal
+rectangle "Product" as Product
+
+
+GerecycledMateriaal -right-> Extruder 
+Extruder -right-> CuttingTool 
+CuttingTool -right-> OutputMateriaal
+OutputMateriaal -right-> KUKA
+KUKA -right-> Mal
+Mal -right-> Product 
+
+Extruder <..> communication: "communication"
+CuttingTool <..> communication: "communication"
+KUKA <..> communication: "communication"
+Mal <..> communication: "communication"
+
+
+
+rectangle "Motion" as Motion #lightgrey
+rectangle "Gripper" as Gripper #lightgrey
+
+
+KUKA-up-> Gripper 
+KUKA -up-> Motion
+
+@enduml
+```
+
+# 2.2 LFT proces flowchart
+
+```plantuml
+@startuml Proces diagram
 start
 
 :PLC stuurt Start Signaal naar Extruder;

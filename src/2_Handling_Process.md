@@ -33,13 +33,8 @@ KUKA <..> communication: "communication"
 Mal <..> communication: "communication"
 
 
-
-rectangle "Motion" as Motion #lightgrey
-rectangle "Gripper" as Gripper #lightgrey
-
-
-KUKA-up-> Gripper 
-KUKA -up-> Motion
+KUKA-up-> Grijper 
+KUKA -up-> Beweging
 
 @enduml
 ```

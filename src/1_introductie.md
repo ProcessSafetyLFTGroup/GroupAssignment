@@ -4,18 +4,13 @@ In deze mdBook wordt het project beschreven van het LFT-handlingsmechanisme voor
 
 ## 1.1 Opdrachtomschrijving
 
-```
-@startuml
-// deegstreeg => hamster noemen
-@enduml
-```
 LFT handling systeem.
 
 TPAC is een onafhankelijk onderzoeks- en innovatiecentrum dat zich specialiseert in thermoplastische composieten en de bijbehorende productieprocessen. TPAC richt zich op praktische toepassingen, ontwikkelt proof-of-concepts voor bedrijven (kleine en middelgrote ondernemingen) en biedt expertise en faciliteiten aan bedrijven die willen innoveren met thermoplastische composieten.
 
 TPAC biedt een open en innovatieve omgeving die gericht is op de ontwikkeling van nieuwe materialen en processen, evenals de verbetering van bestaande processen op een kleine schaal. Projecten worden uitgevoerd voor industriële partners (o.a. GKN Fokker Aerospace, Toray Advanced Composites, Collins Aerospace). 
 
-Betreft dit project, gebruikt TPAC een extruder met lage schuifkracht om composietmateriaal kosteneffectief te recyclen. Momenteel wordt de output van de extruder, een gesmolten en gemengde mix, handmatig overgebracht naar een persvorm. TPAC wil dit proces automatiseren en daarvoor zal een KUKA-robotarm binnen een ENGEL insertcel (gebruikt in dit proces als persvorm) gebruikt worden.
+Betreft dit project, gebruikt TPAC een extruder met lage schuifkracht om composietmateriaal kosteneffectief te recyclen. Momenteel wordt de output van de extruder, een gesmolten en gemengde mix (Ook wel hamster genoemd), handmatig overgebracht naar een persvorm. TPAC wil dit proces automatiseren en daarvoor zal een KUKA-robotarm binnen een ENGEL insertcel (gebruikt in dit proces als persvorm) gebruikt worden.
   
 De fysieke delen die door de studenten ontworpen zal worden zijn:
 

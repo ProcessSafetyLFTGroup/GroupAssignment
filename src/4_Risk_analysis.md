@@ -1,87 +1,49 @@
 # 4 Risicoanalyse
 
-De volgende risicoanalyse beschrijft mogelijke risico's in het LFT-handlingsproces en de bijbehorende mitigeringsstrategieën.
-Ten eerste de analyse van de grippertool
+Voor ons project hebben we een risicoanalyse opgesteld. We hebben een lijst gemaakt met mogelijke risico’s die kunnen ontstaan tijdens het werken met de extruder en de robot met de grijper.
+In deze analyse beschrijven we verschillende soorten risico’s die zich kunnen voordoen. Voor elk risico bekijken we hoe groot de kans is dat het gebeurt en wat de mogelijke gevolgen zouden zijn. We categoriseren de risico’s op basis van de ernst van de impact. Voor elk risico zijn vervolgens maatregelen opgesteld om het risico te verkleinen.
+De risico’s betreffen onder andere brandwonden door hete materialen en onderdelen, verwondingen door scherpe voorwerpen, en botsingen tussen de robot en werknemers.
 
-```plantuml
-@startuml
-title Gripper
+In de Excel-sheet kun je aangeven hoe vaak het risico zich voordoet (waarschijnlijkheid). In tabel 1 staan verschillende keuzes en wordt uitgelegd hoe vaak het risico waarschijnlijk zal optreden. Tabel 2 beschrijft hoe groot de impact is als het risico zich voordoet, oftewel hoe ernstig de schade voor de persoon kan zijn. In tabel 3 worden waarschijnlijkheid en impact tegen elkaar afgewogen, wat resulteert in een inschatting van de risicograad per situatie. 
 
-' Rectangle toegevoegd om risico's te splitten tussen Gripper en Controls?
+### tabel 1 waarschijnlijkheid
+| Waarschijnlijkheid | Kans                 | Uitleg                                                                                           |
+|--------------------|----------------------|--------------------------------------------------------------------------------------------------|
+| 5                  | Vrijwel zeker        | Vrijwel zeker dat het risico zal optreden in het komende jaar (99%)                              |
+| 4                  | Waarschijnlijk       | Het risico zal waarschijnlijk optreden in het komende jaar (75%)                                 |
+| 3                  | Mogelijk             | Het risico kan optreden in de komende drie jaar (50%)                                            |
+| 2                  | Onwaarschijnlijk     | Het risico is onwaarschijnlijk om op te treden in de komende vijf jaar (20%)                     |
+| 1                  | Zeer onwaarschijnlijk | Zeer onwaarschijnlijk dat het risico zal optreden in de komende twintig jaar (5%)               |
+
+### tabel 2 Impacttabel voor Menselijke Schade
+
+| Impactniveau | Impact       | Uitleg                                                                                         |
+|--------------|--------------|------------------------------------------------------------------------------------------------|
+| 1            | Zeer klein   | Zeer kleine kans op letsel of ongemak, geen langdurige gevolgen voor de gezondheid.           |
+| 2            | Klein        | Klein letsel of licht ongemak, weinig of geen invloed op welzijn, herstel binnen korte tijd.   |
+| 3            | Matig        | Matig letsel met tijdelijke gezondheidsproblemen of stress, herstel binnen enkele weken.       |
+| 4            | Groot        | Ernstig letsel met aanzienlijke gezondheidsproblemen, langdurige impact op welzijn en herstel. |
+| 5            | Zeer groot   | Zeer ernstig letsel of overlijden, grote en langdurige impact op gezondheid en welzijn.        |
+
+
+
+
+
+### tabel 3 risico 
+
+|   | Zeer klein  | Klein  | Matig  | Groot  | Zeer groot  |
+|-----------------------------|-------------------------|---------------|-------------------|---------------|-------------------------|
+| *Vrijwel zeker*               |  Middle          |  Middle |  High     |  Very High |  Very High |
+| *Waarschijnlijk*              |  Middle          |  Middle |  High     |  Very High |  Very High |
+| *Mogelijk*                    |  Low             |  Middle |  Middle   |  High     |  High       |
+| *Onwaarschijnlijk*            |  Low             |  Low    |  Middle   |  Middle   |  Middle     |
+| *Zeer onwaarschijnlijk*       |  Very Low        |  Low    |  Low      |  Middle   |  Middle     |
+
+
+\
+\
+Onder deze download link kun je de exel sheet downloaden van de risico analyse
+[Downloaden Risco analyse](./data/Risk_analysis_LFT_v2.xlsx)
  
-    skinparam partition {
-    BorderColor black
-    BackgroundColor lightGrey
-    }
-    partition "Risico 1: Falen van de Extruder" {
-        
-        :Beschrijving: Extruder start niet, waardoor het proces stopt;
-        :Waarschijnlijkheid: Gemiddeld;
-        :Impact: Hoog;
-        :Mitigatie: Regelmatig onderhoud en systeemmonitoring;
-    }
-
-    detach
-    partition "Risico 2: Sensorstoring" {
-        :Beschrijving: Fotocel of Reed-schakelaar detecteert geen materiaal of gereedschapsposities;
-        :Waarschijnlijkheid: Laag;
-        :Impact: Hoog;
-        :Mitigatie: Regelmatige sensorcontroles en redundantie met secundaire sensoren;
-    }
-    detach
-    partition "Risico 3: Verstopte gripperneedles" {
-        :Beschrijving: Gripper needles vastgeklemd in beplating
-        :Waarschijnlijkheid: Gemiddel;
-        :Impact: Gemiddeld;
-        :Mitigatie: Tool tijdig behandelen met lossingsmiddel.;
-    }
-    detach 
-    partition "Risico 4: Hamster niet opgepakt of losgelaten" {
-        :Beschrijving: Hamster niet opgepakt van extruder/niet losgelaten in matrijs;
-        :Waarschijnlijkheid: Gemiddeld;
-        :Impact: Laag ;
-        :Mitigatie: Dmv sensor een softwarematige check doen of hamster los/vast is.;
-    }
-@enduml
-```
-
-Hieronder de risicoanalyse van het overkoepelende systeem, de KUKA robotarm, de extruder, cutting tool, de ENGEL en de communicatie hiertussen.
 
 
-```plantuml
-@startuml
-title Systeem
-
-    skinparam partition {
-        BorderColor black
-        BackgroundColor lightGrey
-    }
-    partition "Risico 5: Pneumatisch Systeem Falen" {
-        :Beschrijving: Falen van het pneumatische systeem verhindert de werking van de grijper;
-        :Waarschijnlijkheid: Gemiddeld;
-        :Impact: Hoog;
-        :Mitigatie: Noodstopprocedures en regelmatige inspectie van pneumatische leidingen;
-    }
-    detach
-    partition "Risico 6: Misalignment van Robotarm" {
-        :Beschrijving: Robotarm op incorrecte positie;
-        :Waarschijnlijkheid: Laag;
-        :Impact: Gemiddeld;
-        :Mitigatie: Initiele calibratie dmv verplaatsbaar werkobject; 
-    }
-    detach
-    partition "Risico 7: Warmte" {
-        :Beschrijving: De extruder geeft warmte af en staat niet in het hekwerk
-        :Waarschijnlijkheid: Gemiddel;
-        :Impact: Gemiddeld;
-        :Mitigatie: Afstand houden en waarschuwenbord dat het heet is.;
-    }
-    detach
-    partition "Risico 8: Materiaal te koud" {
-        :Beschrijving: Materiaal teveel afgekoeld, waardoor oppakken niet meer mogelijk is.;
-        :Waarschijnlijkheid: Gemiddeld;
-        :Impact: Gemiddeld;
-        :Mitigatie: Extruder stopzetten na het cutten tot de pers klaar is, om niet af te koelen in de buitenlucht.;
-    }
-
-@enduml

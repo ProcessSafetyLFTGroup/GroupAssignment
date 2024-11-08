@@ -35,7 +35,7 @@ Met deze documenten zal de klant alle relevante informatie hebben wat nodig is v
 
 ## 1.2 Taakverdeling
 
-```
+```plantuml
 @startuml
 class Taakverdeling {
     || Nummer || Naam || Taak 1 || Taak 2 || Taak 3 ||

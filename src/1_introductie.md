@@ -1,8 +1,18 @@
 # 1 Introductie
-In deze mdBook wordt het project beschreven van het LFT-handlingsmechanisme voor TPAC, dat we uitvoeren in het kader van de minor Industriële Automatisering, zoals beschreven in sectie 1.1. Voor het vak "Proces en Safety" onderzoeken we het proces en analyseren we de bijbehorende risico's. Het mdbook bevat flowcharts van het te doorlopen proces, een hoofdstuk over veiligheid en een uitgebreide risicoanalyse.
+In deze mdBook wordt het project beschreven van het LFT-handlingsmechanisme voor TPAC, dat we uitvoeren in het kader van de minor Industriële Automatisering, zoals beschreven in sectie 1.2. Voor het vak "Proces en Safety" onderzoeken we het proces en analyseren we de bijbehorende risico's. Het mdbook bevat flowcharts van het te doorlopen proces.
+
+## 1.1 Groepleden
+
+| Naam             | Opleiding         | Studentnummer |
+|------------------|-------------------|---------------|
+| Thijs ten Heggeler| Werktuigbouwkunde | 523908        |
+| Milan Wichink    | Werktuigbouwkunde | 518044        |
+| Luuk Vulkers     | Elektrotechniek   | 523822        |
+| Joost Peters     | Mechatronica       | 514165        |
+| Jur Otten        | Mechatronica       | 514476        |
 
 
-## 1.1 Opdrachtomschrijving
+## 1.2 Opdrachtomschrijving
 
 LFT handling systeem.
 
@@ -33,61 +43,57 @@ De volgende documentatie zal worden opgeleverd:
 Met deze documenten zal de klant alle relevante informatie hebben wat nodig is voor besturing en correct gebruik van het ontwerp. 
 
 
-## 1.2 Taakverdeling
+## 1.3 Taakverdeling
 
-```plantuml
-@startuml
-class Taakverdeling {
-    || Nummer || Naam || Taak 1 || Taak 2 || Taak 3 ||
-    | 1 | Luuk | Algemeen opzet | Handeling proces analyzed | |
-    | 2 | Joost | Handeling Flowchart Diagram | Zelf evaluatie | |
-    | 3 | Thijs | Risk analysis | | |
-    | 4 | Milan | Diagram | Handeling introductie| Handeling interface|
-    | 5 | Jur | Introductie | Taakverdeling | Samenwerking in GitHub commits |
-}
-@enduml
-```
+| Nummer | Naam  | Taak 1                    | Taak 2                        | Taak 3                        |
+|--------|-------|---------------------------|-------------------------------|-------------------------------|
+| 1      | Luuk  | Algemeen opzet            | Handeling proces analyzed     |                               |
+| 2      | Joost | Handeling Flowchart Diagram| Zelf evaluatie               |                               |
+| 3      | Thijs | Risico analisyse          |                               |                               |
+| 4      | Milan | Handeling diagram         | Risico analisyse ondersteunen | Handeling interface           |
+| 5      | Jur   | Introductie               | Taakverdeling                 | Samenwerking in GitHub commits|
 
 
 
-## 1.3 Samenwerking in GitHub
+
+## 1.4 Samenwerking in GitHub
 
 
-Voor onze groepssamenwerking hebben we een workflow opgesteld in GitHub die ons helpt om overzichtelijk en efficiënt te werken. Hierbij verdelen we taken en zorgen we voor een gecontroleerde versiebeheeromgeving. Hieronder beschrijven we de aanpak voor commits, pull requests, merges en algemene samenwerking.
+Voor onze groepssamenwerking gebruiken we GitHub om overzichtelijk en efficiënt te werken. We verdelen de taken, zorgen voor versiebeheer en volgen een duidelijke werkwijze voor commits, pull requests, merges en communicatie.
 
 
-### 1.3.1 Commits Structureren
+### 1.4.1 Commits Structureren
 
 
-We hanteren een gestructureerde aanpak voor commits om de geschiedenis overzichtelijk en leesbaar te houden:
+We zorgen ervoor dat commits duidelijk en overzichtelijk zijn:
 
-• Frequentie van commits: We commiten na elke afgeronde taak of logische wijziging, en niet voor elke kleine aanpassing, zoals een enkele zin. Dit zorgt voor een overzichtelijke commitgeschiedenis.
-
-• Commit-berichten: We gebruiken beschrijvende commit-berichten om duidelijk aan te geven wat de commit inhoudt.
+    • Frequentie van commits: We maken een commit na elke afgeronde taak of belangrijke wijziging, niet bij elke kleine aanpassing, zodat de commitgeschiedenis helder blijft.
+    
+    • Commit-berichten: We schrijven beschrijvende berichten bij elke commit, zodat het duidelijk is wat er is veranderd.
 
     
-### 1.3.2 Pull Requests
+### 1.4.2 Pull Requests
 
 
-Onze aanpak voor pull requests en het reviewproces is als volgt:
+Onze aanpak voor pull requests is als volgt:
 
-• Commit in onze fork: Tussen door de dag doen wij een commit per onderdeel om zo duidelijk mogelijk te hebben wat er aangepast is. Dit doen we omdat het dan duidelijk is wat er aangepast is
-
-• Pull requests (PRs): Aan het einde van een werkdag of na het voltooien van een taak maken we een pull request naar de Github organistatie. Hiermee voorkomen we te veel kleine pull requests en houden we het overzicht.
+    • Commits in onze fork: Gedurende de dag maken we commits voor elk onderdeel, zodat we precies kunnen zien wat er is aangepast.
+    
+    • Pull requests (PR's): Aan het einde van de werkdag of na een voltooide taak, maken we een pull request naar de hoofdrepository. Dit voorkomt teveel kleine pull requests en houdt het overzichtelijk.
     
 
-### 1.3.3 Mergen en Merge-commits
+### 1.4.3 Mergen en Merge-commits
 
 
-Onze merge-strategie helpt ons om de projectgeschiedenis overzichtelijk te houden:
+Voor het mergen van code hanteren we de volgende werkwijze:
+
+    • Code reviews en dubbele controle: Iemand anders dan de auteur van de taak reviewt de pull request. Dit zorgt voor extra controle en verhoogt de kwaliteit.
     
-• Code reviews en dubbele controle: Een teamlid die de taak niet zelf heeft geschreven, reviewt de pull request. Dit zorgt voor een dubbele controle van de wijzigingen, wat de kwaliteit en veiligheid verhoogt.
-
-• Checklist voor reviews: Tijdens de review controleren we op duidelijke structuur, afwezigheid van syntax- of veiligheidsfouten, en duidelijke commit-boodschappen.
-
-• Feedback: De reviewer kan suggesties geven of kleine aanpassingen maken, zodat de PR zo snel mogelijk kan worden afgerond.
+    • Checklist voor reviews: Tijdens de review controleren we op een duidelijke structuur, geen syntax- of veiligheidsfouten, en duidelijke commit-berichten.
+    
+    • Feedback: De reviewer kan suggesties geven of kleine wijzigingen voorstellen om de PR snel af te ronden.
     
 
-### 1.3.4 Regelmatige Communicatie en Planning
+### 1.4.4 Regelmatige Communicatie en Planning
 
-Voor een transparante en efficiënte samenwerking hebben we dagelijkse overlegmomenten ingepland. Tijdens deze check-ins bespreken we de voortgang en verdelen we nieuwe taken. Alle taken en issues worden bijgehouden in GitHub en gekoppeld aan de relevante pull requests, waardoor iedereen inzicht heeft in de planning en voortgang.
+We plannen op zijn tijd een overleggen in om de voortgang te bespreken en nieuwe taken te verdelen. Alle taken en issues worden in GitHub bijgehouden en gekoppeld aan de relevante pull requests, zodat iedereen altijd op de hoogte is van de voortgang.

@@ -6,7 +6,17 @@ De risico’s betreffen onder andere brandwonden door hete materialen en onderde
 
 In de Excel-sheet kun je aangeven hoe vaak het risico zich voordoet (waarschijnlijkheid). In tabel 1 staan verschillende keuzes en wordt uitgelegd hoe vaak het risico waarschijnlijk zal optreden. Tabel 2 beschrijft hoe groot de impact is als het risico zich voordoet, oftewel hoe ernstig de schade voor de persoon kan zijn. In tabel 3 worden waarschijnlijkheid en impact tegen elkaar afgewogen, wat resulteert in een inschatting van de risicograad per situatie. 
 
-### tabel 1 waarschijnlijkheid
+Om de risico’s te verkleinen, hebben we maatregelen getroffen volgens de richtlijnen en eisen die zijn vastgelegd in diverse NEN-normen. Deze normen bieden richtlijnen voor het veilig ontwerpen en gebruiken van industriële machines en robotsystemen en richten zich op het waarborgen van de veiligheid van werknemers en het verminderen van operationele risico’s. De volgende NEN-normen zijn in onze maatregelen meegenomen:
+- NEN-EN-ISO 10218-1
+- NEN-EN-ISO 10218-2
+- NEN-EN-ISO 12100
+- NEN-EN-ISO 13857
+
+Onder deze download link kun je de exel sheet downloaden van de risico analyse
+[Downloaden Risco analyse](./data/Risk_analysis_LFT_v2.xlsx)
+ 
+
+### Tabel 1 waarschijnlijkheid
 | Waarschijnlijkheid | Kans                 | Uitleg                                                                                           |
 |--------------------|----------------------|--------------------------------------------------------------------------------------------------|
 | 5                  | Vrijwel zeker        | Vrijwel zeker dat het risico zal optreden in het komende jaar (99%)                              |
@@ -15,7 +25,7 @@ In de Excel-sheet kun je aangeven hoe vaak het risico zich voordoet (waarschijnl
 | 2                  | Onwaarschijnlijk     | Het risico is onwaarschijnlijk om op te treden in de komende vijf jaar (20%)                     |
 | 1                  | Zeer onwaarschijnlijk | Zeer onwaarschijnlijk dat het risico zal optreden in de komende twintig jaar (5%)               |
 
-### tabel 2 Impacttabel voor Menselijke Schade
+### Tabel 2 Impacttabel voor Menselijke Schade
 
 | Impactniveau | Impact       | Uitleg                                                                                         |
 |--------------|--------------|------------------------------------------------------------------------------------------------|
@@ -29,7 +39,7 @@ In de Excel-sheet kun je aangeven hoe vaak het risico zich voordoet (waarschijnl
 
 
 
-### tabel 3 risico 
+### Tabel 3 risico 
 
 |   | Zeer klein  | Klein  | Matig  | Groot  | Zeer groot  |
 |-----------------------------|-------------------------|---------------|-------------------|---------------|-------------------------|
@@ -40,10 +50,9 @@ In de Excel-sheet kun je aangeven hoe vaak het risico zich voordoet (waarschijnl
 | *Zeer onwaarschijnlijk*       |  Very Low        |  Low    |  Low      |  Middle   |  Middle     |
 
 
-\
-\
-Onder deze download link kun je de exel sheet downloaden van de risico analyse
-[Downloaden Risco analyse](./data/Risk_analysis_LFT_v2.xlsx)
+
+
+
  
 
 

@@ -1,7 +1,11 @@
-# 7 Zelfevaluatie van Groepswerk
-(evaluatie zelf moet ik nog toevoegen komt er aan)
+# 4 Zelfevaluatie van Groepswerk
+In dit project hebben we als team tot zo ver goed samengewerkt aan de ontwikkeling van het LFT-handlingsmechanisme voor TPAC. Om effectief en gestructureerd samen te werken, hebben we ons gericht op taakverdeling, communicatie en het gebruik van tools die we tijdens de Proces en Safety lessen hebben geleerd.
 
-## 7.1 Toekomstige Verbeterpunten
+Voor de taakverdeling en samenwerking hebben we eerst gekeken naar ieders sterke punten en op basis daarvan de taken verdeeld. Luuk had snel inzicht in het werken met Git en heeft al snel een eerste opzet gemaakt en de rest van de groep hierin de weg wijs gemaakt. Daarna zijn de taken onder de groep verdeeld, en heeft iedereen zijn taken goed uitgevoerd. Door elkaars werk te controleren, zorgden we ervoor dat ons werk duidelijk en overzichtelijk bleef. Ons gebruik van de GitHub-workflow ondersteunde daarbij de communicatie, met duidelijke regels voor pull requests en merge commits, wat de samenwerking verder heeft verbetert.
+
+Om overzicht te houden en ons werk toegankelijk te maken, hebben we GitHub gebruikt voor voortgangsbewaking en gezamenlijke documentatieopbouw. Dit hielp om wijzigingen van teamleden bij te houden en zorgde ervoor dat ieder teamlid een gelijke bijdrage leverde. De documentatieopbouw met diagrammen en interfacebeschrijvingen maakte onze resultaten visueel en inzichtelijk. We hebben hiervoor PlantUML gebruikt voor de diagrammen, en alles is gemaakt in een mdBook-omgeving, wat hielp om alles gestructureerd en duidelijk bij elkaar te houden.
+
+## 4.1 Toekomstige Verbeterpunten
 Voor het tweede kwartiel van het project en voor het geval we deze safety opdracht opnieuw vanaf het begin zouden moeten starten, hebben we een aantal verbeterpunten opgesteld om onze efficiëntie en resultaten verder te verhogen:
 
 1. **Planning en Tijdbeheer:** Hoewel de taakverdeling goed verliep, willen we onze planning en tijdsbeheer verbeteren om mogelijke obstakels eerder aan te pakken. Nu zijn we ook aan de late kant begonnen met het uitwerken van de risicoanalyses, waardoor we essentiële punten mogelijk hebben gemist. Door wekelijks tijd vrij te maken voor dit deel van het project, kunnen we voorkomen dat we hier in het vervolg tegenaan lopen.

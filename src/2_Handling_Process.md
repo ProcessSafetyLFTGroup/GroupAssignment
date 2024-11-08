@@ -4,14 +4,16 @@
 
 In dit hoofdstuk worden twee diagrammen weergeven:
 
-Interface diagram (hoofdstuk 2.1): In dit diagram worden de volgorde van de verschillende systemen weergeven. Daarnaast word ook weergeven hoe alle losse systemen comminuceren.
+Interface diagram (hoofdstuk 2.2): In dit diagram worden de volgorde van de verschillende systemen weergeven. Daarnaast word ook weergeven hoe alle losse systemen communiceren.
 
-Flow chart (hoofdstuk 2.2): In de flowchart wordt het volledige proces gedetaileerd stap voor stap weergeven.
+Flow chart (hoofdstuk 2.3): In de flowchart wordt het volledige proces gedetaileerd stap voor stap weergeven.
 
 ## 2.2 LFT Interface diagram
 
 ```plantuml
 @startuml interface Diagram
+
+skinparam backgroundcolor transparent
 skinparam rectangle {
     BackgroundColor white
     BorderColor black
@@ -52,7 +54,7 @@ KUKA -up-> Beweging
 In het afhandelingsproces van het LFT-systeem wordt een reeks machines en handelingen gecoördineerd om gerecycled materiaal om te zetten naar een afgewerkt product. De PLC bestuurt en monitort elke stap van het proces. De belangrijkste stappen zijn als volgt:
 
 1. Opstartsignaal en Extruder Start: Het proces begint met een startsignaal dat de extruder activeert. Als de extruder gestart is draait de toevoer van gerecycled materiaal.
-2. Materiaalherkenning door Fotocel: Een fotocel detecteert of materiaal lang genoeg is geëxtrudeerd voor afsnijden. Wanneer het materiaal aanwezig is, wordt met een relais het pneumatische systeem geactiveerd om het materiaal te snijden.
+2. Materiaalherkenning door Fotocel: Een fotocel op lengte leest uit of het materiaal lang genoeg is geëxtrudeerd om af te snijden. Wanneer het materiaal aanwezig is, wordt met een relais het pneumatische systeem geactiveerd om het materiaal te snijden.
 3. Snijden door Cutting Tool: Het cutting tool sluit zich en snijdt de materiaalstroom op de juiste lengte. Een reedcontact sensor controleert of het snijgereedschap in de juiste compleet dichte positie is aangekomen.
 4. Transport naar KUKA Robot en Robot Activering: Na het snijden wordt het materiaal via een transportband naar de robot gebracht. De KUKA-robot beweegt naar de snijpositie om het materiaal op te pakken.
 5. Grijpen van het Materiaal: De grijper van de robot sluit zich en pakt het gesneden materiaal. Een fotocel bevestigt of het materiaal goed vastgepakt is voordat de robot doorgaat.
@@ -70,6 +72,8 @@ Zo geeft het schema een helder beeld van de samenwerking tussen de machineonderd
 
 ```plantuml
 @startuml Proces diagram
+skinparam backgroundcolor transparent
+
 start
 
 :Start_Signaal>

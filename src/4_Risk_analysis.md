@@ -43,7 +43,7 @@ In de Excel-sheet kun je aangeven hoe vaak het risico zich voordoet (waarschijnl
 \
 \
 Onder deze download link kun je de exel sheet downloaden van de risico analyse
-[Downloaden Risco analyse](./data/Risk_analysis_LFT_v1.xlsx)
+[Downloaden Risco analyse](./data/Risk_analysis_LFT_v2.xlsx)
  
 
 

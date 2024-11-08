@@ -1,25 +1,18 @@
 # 2 LFT Afhandelingsproces
 
-## 2.1 Introductie
+In dit hoofdstuk worden de volgende diagrammen en analyses weergegeven: het LFT handling interface diagram (hoofdstuk 2.1) een procesanalyse (hoofdstuk 2.2) en de procesflowchart (2.3).
+## 2.1 LFT Interface diagram
 
-In dit hoofdstuk worden twee diagrammen weergeven:
-
-Interface diagram (hoofdstuk 2.2): In dit diagram worden de volgorde van de verschillende systemen weergeven. Daarnaast word ook weergeven hoe alle losse systemen communiceren.
-
-Flow chart (hoofdstuk 2.3): In de flowchart wordt het volledige proces gedetaileerd stap voor stap weergeven.
-
-## 2.2 LFT Interface diagram
+In dit diagram worden de volgorde van de verschillende systemen weergeven. Daarnaast word ook weergeven hoe alle losse systemen communiceren.
 
 ```plantuml
-@startuml interface Diagram
+@startuml LFT handling interface Diagram
 
-skinparam backgroundcolor transparent
 skinparam rectangle {
     BackgroundColor white
     BorderColor black
     FontSize 12
 }
-
 
 rectangle "gerecycled Materiaal" as GerecycledMateriaal
 rectangle "Extruder" as Extruder
@@ -28,7 +21,6 @@ rectangle "Output Materiaal" as OutputMateriaal
 rectangle "Robot Arm (KUKA)" as KUKA
 rectangle "Mal (ENGEL)" as Mal
 rectangle "Product" as Product
-
 
 GerecycledMateriaal -right-> Extruder 
 Extruder -right-> CuttingTool 
@@ -49,7 +41,7 @@ KUKA -up-> Beweging
 @enduml
 ```
 
-## 2.3 Processanalyse
+## 2.2 Processanalyse
 
 In het afhandelingsproces van het LFT-systeem wordt een reeks machines en handelingen gecoördineerd om gerecycled materiaal om te zetten naar een afgewerkt product. De PLC bestuurt en monitort elke stap van het proces. De belangrijkste stappen zijn als volgt:
 
@@ -64,15 +56,15 @@ In het afhandelingsproces van het LFT-systeem wordt een reeks machines en handel
 
 Deze cyclus wordt herhaald voor elke nieuwe lading materiaal, waarbij de volgorde en timing bewaakt wordt om een soepel productieproces te garanderen.
 
-## 2.4 Flowchart
+## 2.3 Flowchart
 
+In de flowchart wordt het volledige proces gedetaileerd stap voor stap weergeven.
 Deze flowchart biedt een overzicht van het geautomatiseerde productieproces waarin een PLC, extruder, snijtool en KUKA-robot samenwerken. Stap voor stap toont de flowchart hoe deze onderdelen via signalen en sensoren met elkaar communiceren om de hamster door de productiecyclus te begeleiden. De PLC stuurt elk onderdeel aan en zorgt dat het materiaal wordt bewerkt, verplaatst en uiteindelijk in de pers wordt gevormd.
 
 Zo geeft het schema een helder beeld van de samenwerking tussen de machineonderdelen door alle processtappen heen.
 
 ```plantuml
 @startuml Proces diagram
-skinparam backgroundcolor transparent
 
 start
 

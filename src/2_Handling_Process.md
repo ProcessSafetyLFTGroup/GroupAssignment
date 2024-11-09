@@ -52,7 +52,7 @@ In het afhandelingsproces van het LFT-systeem wordt een reeks machines en handel
 5. Grijpen van het Materiaal: De grijper van de robot sluit zich en pakt het gesneden materiaal. Een fotocel bevestigt of het materiaal goed vastgepakt is voordat de robot doorgaat.
 6. Verplaatsing naar Matrijs: De robot beweegt naar de matrijs (ENGEL) en plaatst het materiaal in de mal.
 7. Loslaten van het Materiaal en Terugkeer naar Homepositie: De grijper laat het materiaal los in de matrijs. Een fotocel bevestigt dat het materiaal is vrijgegeven. Vervolgens keert de robot terug naar de homepositie om klaar te staan voor de volgende cyclus.
-8. Sluiten van de Matrijs: Tot slot sluit de matrijs om het materiaal verder te verwerken en af te werken tot het eindproduct.
+8. Sluiten van de Matrijs: Tot slot sluit de matrijs om het materiaal verder te verwerken tot het eindproduct.
 
 Deze cyclus wordt herhaald voor elke nieuwe lading materiaal, waarbij de volgorde en timing bewaakt wordt om een soepel productieproces te garanderen.
 

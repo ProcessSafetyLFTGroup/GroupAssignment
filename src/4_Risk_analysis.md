@@ -1,22 +1,22 @@
-# 4 Risicoanalyse
+# 3 Risicoanalyse
 
-Voor ons project hebben we een risicoanalyse opgesteld. We hebben een lijst gemaakt met mogelijke risico’s die kunnen ontstaan tijdens het werken met de extruder en de robot met de grijper.
-In deze analyse beschrijven we verschillende soorten risico’s die zich kunnen voordoen. Voor elk risico bekijken we hoe groot de kans is dat het gebeurt en wat de mogelijke gevolgen zouden zijn. We categoriseren de risico’s op basis van de ernst van de impact. Voor elk risico zijn vervolgens maatregelen opgesteld om het risico te verkleinen.
+Voor dit project is er een risicoanalyse opgesteld. Er is een lijst gemaakt met mogelijke risico’s die kunnen ontstaan tijdens het werken met de extruder en de robot met de grijper.
+In deze analyse worden verschillende soorten risico’s beschreven die zich kunnen voordoen. Voor elk risico is bekeken hoe groot de kans is dat het gebeurt en wat de mogelijke gevolgen zouden zijn. De risico’s zijn op basis van de ernst van de impact gecategoriseerd. Voor elk risico zijn vervolgens maatregelen opgesteld om het risico te verkleinen.
 De risico’s betreffen onder andere brandwonden door hete materialen en onderdelen, verwondingen door scherpe voorwerpen, en botsingen tussen de robot en werknemers.
 
-In de Excel-sheet kun je aangeven hoe vaak het risico zich voordoet (waarschijnlijkheid). In tabel 1 staan verschillende keuzes en wordt uitgelegd hoe vaak het risico waarschijnlijk zal optreden. Tabel 2 beschrijft hoe groot de impact is als het risico zich voordoet, oftewel hoe ernstig de schade voor de persoon kan zijn. In tabel 3 worden waarschijnlijkheid en impact tegen elkaar afgewogen, wat resulteert in een inschatting van de risicograad per situatie. 
+In de Excel-sheet is aan te geven hoe vaak het risico zich voordoet (waarschijnlijkheid). In tabel 1 staan verschillende keuzes en wordt uitgelegd hoe vaak het risico waarschijnlijk zal optreden. Tabel 2 beschrijft hoe groot de impact is als het risico zich voordoet, oftewel hoe ernstig de schade voor de persoon kan zijn. In tabel 3 worden waarschijnlijkheid en impact tegen elkaar afgewogen, wat resulteert in een inschatting van de risicograad per situatie. 
 
-Om de risico’s te verkleinen, hebben we maatregelen getroffen volgens de richtlijnen en eisen die zijn vastgelegd in diverse NEN-normen. Deze normen bieden richtlijnen voor het veilig ontwerpen en gebruiken van industriële machines en robotsystemen en richten zich op het waarborgen van de veiligheid van werknemers en het verminderen van operationele risico’s. De volgende NEN-normen zijn in onze maatregelen meegenomen:
+Om de risico’s te verkleinen, zijn maatregelen getroffen volgens de richtlijnen en eisen die zijn vastgelegd in diverse NEN-normen. Deze normen bieden richtlijnen voor het veilig ontwerpen en gebruiken van industriële machines en robotsystemen en richten zich op het waarborgen van de veiligheid van werknemers en het verminderen van operationele risico’s. De volgende NEN-normen zijn in deze maatregelen meegenomen:
 - NEN-EN-ISO 10218-1
 - NEN-EN-ISO 10218-2
 - NEN-EN-ISO 12100
 - NEN-EN-ISO 13857
 
-Onder deze download link kun je de exel sheet downloaden van de risico analyse
+Onder deze download link is de Excel-sheet van de risico analyse te downloaden
 [Downloaden Risco analyse](./data/Risk_analysis_LFT_v2.xlsx)
  
 
-### Tabel 1 waarschijnlijkheid
+### Tabel 1 Waarschijnlijkheid
 | Waarschijnlijkheid | Kans                 | Uitleg                                                                                           |
 |--------------------|----------------------|--------------------------------------------------------------------------------------------------|
 | 5                  | Vrijwel zeker        | Vrijwel zeker dat het risico zal optreden in het komende jaar (99%)                              |
@@ -35,13 +35,9 @@ Onder deze download link kun je de exel sheet downloaden van de risico analyse
 | 4            | Groot        | Ernstig letsel met aanzienlijke gezondheidsproblemen, langdurige impact op welzijn en herstel. |
 | 5            | Zeer groot   | Zeer ernstig letsel of overlijden, grote en langdurige impact op gezondheid en welzijn.        |
 
+### Tabel 3 Risico 
 
-
-
-
-### Tabel 3 risico 
-
-|   | Zeer klein  | Klein  | Matig  | Groot  | Zeer groot  |
+|Kans| Zeer klein  | Klein  | Matig  | Groot  | Zeer groot  |
 |-----------------------------|-------------------------|---------------|-------------------|---------------|-------------------------|
 | *Vrijwel zeker*               |  Middle          |  Middle |  High     |  Very High |  Very High |
 | *Waarschijnlijk*              |  Middle          |  Middle |  High     |  Very High |  Very High |

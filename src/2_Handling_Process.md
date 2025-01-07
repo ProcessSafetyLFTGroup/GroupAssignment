@@ -68,46 +68,47 @@ Zo geeft het schema een helder beeld van de samenwerking tussen de machineonderd
 
 start
 
-:Start_Signaal>
+:Start Signaal>
 if (Extruder gestart?) then (Ja)
-    :Start_Output>
+    :Start Output>
 else (Nee)
     stop
 endif
 
 repeat
-    :Fotocel_Materiaal_Aanwezig>
-    repeat while (Fotocel == True?) is (Nee) not (Ja)
+    :Fotocel Materiaal Aanwezig>
+    repeat while (Fotocel = True?) is (Nee) not (Ja)
         :Pneumatisch Uit;
         :Cutting Tool sluit en snijdt deegstreng;
 repeat
-    :Reedcontact_Cutting_Tool>
-    repeat while (Reedcontact == True?) is (Nee) not (Ja)
+    :Reedcontact Cutting Tool>
+    repeat while (Reedcontact = True?) is (Nee) not (Ja)
         :Pneumatisch In;
         :Start Lopende Band;
         :Start Kuka Robot;
 repeat
-    :Robot_Op_Positie_Cutting_Tool>
-    repeat while (Robot_Op_Positie_Cutting_Tool == True?) is (Nee) not (Ja)
+    :Robot Op Positie Cutting Tool>
+    repeat while (Robot Op Positie Cutting Tool = True?) is (Nee) not (Ja)
         :Pneumatisch Uit Grijper Tool;
         :Grijper Tool sluit en pakt deegstreng vast;
 repeat
-    :Fotocel_Deegstreng_Aanwezig>
-    repeat while (Fotocel == True?) is (Nee) not (Ja)
+    :Fotocel Deegstreng Aanwezig>
+    repeat while (Fotocel = True?) is (Nee) not (Ja)
         :Robot arm naar matrijs;
 repeat
-    :Robot_Op_Positie_Matrijs>
-    repeat while (Robot_Op_Positie_Matrijs == True?) is (Nee) not (Ja)
+    :Robot Op Positie Matrijs>
+    repeat while (Robot Op Positie Matrijs = True?) is (Nee) not (Ja)
         :Pneumatisch In Grijper Tool;
         :Grijper Tool opent en laat deegstreng los;
 repeat
-    :Fotocel_Deegstreng_Afwezig>
-    repeat while (Fotocel == False?) is (Nee) not (Ja)
+    :Fotocel Deegstreng Afwezig>
+    repeat while (Fotocel = False?) is (Nee) not (Ja)
         :Robot arm naar home positie;
 repeat
-    :Robot_Op_Positie_Home>
-    repeat while (Robot_Op_Positie_Home == True?) is (Nee) not (Ja)
+    :Robot Op Positie Home>
+    repeat while (Robot Op Positie Home = True?) is (Nee) not (Ja)
         :Matrijs sluiten;
 stop
 @enduml
+
 ```
